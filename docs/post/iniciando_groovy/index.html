@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Iniciando con groovy // Omar Aparicio</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Omar Aparicio" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://omaraparicio07.github.io/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Iniciando con groovy"/>
+<meta name="twitter:description" content="Trabajando con anterioridad con el lenguaje java empezabá a pensar que entre mas tecnologías de dicho lenguaje aprendiera sería cada vez más complicado recordar la sintaxis, decoradores, estructuras que maneja cada una de ellas. El simple hecho de no olvidar colocar el nivel de acceso a un metodo o atributo se vulve algo tedioso en un proyecto con una cantidad de elementos.
+Hace poco me enteró que existe una alternativa a java llamada groovy, un lenguaje que también es ssoportado por la JVM(Java Virtual Machine) y que es capaz de ejecutar todo codigo escrito en java sin realizar ningún cambio."/>
+
+    <meta property="og:title" content="Iniciando con groovy" />
+<meta property="og:description" content="Trabajando con anterioridad con el lenguaje java empezabá a pensar que entre mas tecnologías de dicho lenguaje aprendiera sería cada vez más complicado recordar la sintaxis, decoradores, estructuras que maneja cada una de ellas. El simple hecho de no olvidar colocar el nivel de acceso a un metodo o atributo se vulve algo tedioso en un proyecto con una cantidad de elementos.
+Hace poco me enteró que existe una alternativa a java llamada groovy, un lenguaje que también es ssoportado por la JVM(Java Virtual Machine) y que es capaz de ejecutar todo codigo escrito en java sin realizar ningún cambio." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://omaraparicio07.github.io/post/iniciando_groovy/" />
+<meta property="article:published_time" content="2019-06-12T08:50:47-05:00"/>
+<meta property="article:modified_time" content="2019-06-12T08:50:47-05:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://omaraparicio07.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="Omar Aparicio" /></a>
+      <h1>Omar Aparicio</h1>
+      <p>Estudiante de Ingeniería en Sistemas Computacionales en la Escuela Superior de Cómputo</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Iniciando con groovy</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jun 12, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <p>Trabajando con anterioridad con el lenguaje java empezabá a pensar que entre mas tecnologías de dicho lenguaje aprendiera sería cada vez más complicado recordar la sintaxis, decoradores, estructuras que maneja cada una de ellas. El simple hecho de no olvidar colocar el nivel de acceso a un metodo o atributo se vulve algo tedioso en un proyecto con una cantidad de elementos.</p>
+
+<p>Hace poco me enteró que existe una alternativa a java llamada groovy, un lenguaje que también es ssoportado por la JVM(Java Virtual Machine) y que es capaz de ejecutar todo codigo escrito en java sin realizar ningún cambio. Groovy es visto como una version mejorada de java por  varias razones, entre ellas las que más me llamaron la atención son:</p>
+
+<p>-<strong>Sintaxís simple</strong></p>
+
+<p>Goovy poseé una sintaxis sencilla parecida a lenguajes como python o pearl,lo cual reduce la dificultad al escribir codigo y facilita mantener proyectos grandes. El tipado dinamico de estos lenguajes es una caracteristica que también se encuentra presente en groovy, esta sencilla caracteristica reduce la complejidad para el desarrollador.</p>
+
+<p>-<strong>Dualidad con java</strong></p>
+
+<p>Todo lo que ya este realizado en java puede ser utilizado en groovy y viceversa, podemos extender las capacidades de un proyecto completo escrito en java y no requerimos de cambiar todo el codigo ya escrito y probado a la sintaxis de groovy. Se puede resumir a la siguiente frase &ldquo;si funciona en java funciona en groovy&rdquo;.</p>
+
+<p>-<strong>Obviedad de algunos elementos</strong></p>
+
+<p>Como complemento a la sintaxis simple de groovy se añade la caracteristica que se pueden &ldquo;obviar&rdquo; u &ldquo;omitir&rdquo; ciertos elementos que hacen de java algo tedioso al escribir un codigo simple. Dentro de estos elementos se encuentra el presindor de los &lsquo;;&rsquo; para terminar una sentencia.</p>
+
+<p>Los niveles de acceso como ya mencione son opcionales, si en un momento no declaramos el metodo de accesso en algun atributo o metodo groovy asumira que es plublico, no tenemos la necesidad de declarar metodos de acceso a los atributos (getter y setter) ya que seran generados en tiempo de ejecución. De los elementos mas interesantes que se pueden obviar en groovy es el  <strong><em>return</em></strong> de un metodo ya que al ser ejecutado un archivo groovy este regresa siempre el ultimo elemento que haya sido evaluado.</p>
+
+<p>Como indica el titulo este post solo expresa mi primera impresión con groovy, seguire trabajando con el lenguaje y expandir el panorama de proximos post y compartir mi experiencia con nuevos descubrumiento u obstaculos que encuentre.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
