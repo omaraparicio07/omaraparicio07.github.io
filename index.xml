@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Omar Aparicio</title>
-    <link>http://omaraparicio07.github.io/</link>
+    <link>https://omaraparicio07.github.io/</link>
     <description>Recent content on Omar Aparicio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Jun 2019 08:50:47 -0500</lastBuildDate>
     
-	<atom:link href="http://omaraparicio07.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://omaraparicio07.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Iniciando con groovy</title>
-      <link>http://omaraparicio07.github.io/post/iniciando_groovy/</link>
+      <link>https://omaraparicio07.github.io/post/iniciando_groovy/</link>
       <pubDate>Wed, 12 Jun 2019 08:50:47 -0500</pubDate>
       
-      <guid>http://omaraparicio07.github.io/post/iniciando_groovy/</guid>
+      <guid>https://omaraparicio07.github.io/post/iniciando_groovy/</guid>
       <description>Trabajando con anterioridad con el lenguaje java empezabá a pensar que entre mas tecnologías de dicho lenguaje aprendiera sería cada vez más complicado recordar la sintaxis, decoradores, estructuras que maneja cada una de ellas. El simple hecho de no olvidar colocar el nivel de acceso a un metodo o atributo se vulve algo tedioso en un proyecto con una cantidad de elementos.
 Hace poco me enteró que existe una alternativa a java llamada groovy, un lenguaje que también es ssoportado por la JVM(Java Virtual Machine) y que es capaz de ejecutar todo codigo escrito en java sin realizar ningún cambio.</description>
     </item>
