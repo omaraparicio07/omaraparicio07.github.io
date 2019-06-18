@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Omar Aparicio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Jun 2019 08:50:47 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jun 2019 10:24:07 -0500</lastBuildDate>
     
 	<atom:link href="https://omaraparicio07.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Groovy Truth y nuevos operadores</title>
+      <link>https://omaraparicio07.github.io/post/groovy_operator/</link>
+      <pubDate>Thu, 13 Jun 2019 10:24:07 -0500</pubDate>
+      
+      <guid>https://omaraparicio07.github.io/post/groovy_operator/</guid>
+      <description>Groovy truth Continuando con groovy me encontré con una caracteristica muy interesante,Groovy Truth, es como se conoce a la capacidad que tiene groovy de extender la evaluación booleana de java. Dentro de una sentencia de decisión if para poder evaluar si una cadena es vacia en java tendriamos que realizar algo similar a esto:
+String strEmpty = &amp;quot;&amp;quot;; if(strEmpty.isEmpty()) System.out.println(&amp;quot;cadena Vacia&amp;quot;);  Donde se aprecia que es necesario llamar a un metodo que realice la evaluacion y de como resultado un valor booleano, ya que es el unico tipo de dato que puede evaliar java en una sentencia if mientra que groovy ya evalua por defecto una cadena vacia como falso y no es necesario llamar a ningun metodo, otros elementos que groovy evalua como falsos por defectos son los que se aprecian en la imágen</description>
+    </item>
     
     <item>
       <title>Iniciando con groovy</title>
